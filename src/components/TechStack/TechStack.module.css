@@ -1,0 +1,37 @@
+.techStack {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 670px;
+    padding: 0 10px;
+
+    margin: 10px auto 70px;
+}
+
+.title {
+    font-family: MPlus, serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.divider {
+    height: 30px;
+    border: 1px #525252 solid;
+}
+
+.items {
+    display: flex;
+    gap: 12px;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: #313134;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

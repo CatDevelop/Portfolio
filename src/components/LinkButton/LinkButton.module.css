@@ -1,0 +1,99 @@
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+}
+
+
+.linkbutton {
+    font-family: SFPro, serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 12px;
+    transition: background-color 250ms ease 0s, opacity 0.5s linear, transform 0.5s linear;
+    height: 2.5rem;
+    min-width: 2.5rem;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    cursor: pointer;
+    transform: translateX(0px);
+    color:#81E6D9;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+
+    visibility: visible;
+    opacity: 1;
+}
+
+.linkbutton a {
+    color:#81E6D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.linkbutton:hover {
+    background-color: rgba(129, 230, 217, 0.12);
+}
+
+.linkbutton:active {
+    background-color: #38B2AC;
+}
+
+.linkbutton:disabled {
+    background-color: #313134;
+    color: #9C9C9C;
+
+    cursor: default;
+}
+
+
+.second {
+    background-color: #F086CB !important;
+
+}
+
+
+.second:hover {
+    background-color: #F7BCE2 !important;
+}
+
+.second:active {
+    background-color: #F053A1 !important;
+}
+
+.second:disabled {
+    background-color: #313134 !important;
+    color: #9C9C9C !important;
+}
+
+.hide {
+    /*animation: hide 1s ease-in-out;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear, transform 0.5s linear;
+    transform: translateX(15px);
+}
+

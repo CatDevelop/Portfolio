@@ -1,0 +1,169 @@
+@keyframes showLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.projectPreview {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    -moz-box-align: center;
+    align-items: center;
+
+    padding: 0 40px;
+    animation: showLeft 1.5s ease;
+}
+
+.projectPreview:nth-of-type(2n+1) {
+    animation: showRight 1.5s ease;
+}
+
+.projectContent {
+    grid-area: 1 / 1 / -1 / 7;
+}
+
+.projectPreview:nth-of-type(2n+1) .projectContent {
+    grid-column: 7 / -1;
+}
+
+.projectPreview:nth-of-type(2n+1) .projectImageContainer {
+    grid-column: 1 / 8;
+}
+
+.projectImageContainer {
+    z-index: 1;
+    grid-area: 1 / 6 / -1 / -1;
+
+    /*height: auto;*/
+    overflow: hidden;
+    /*width: 500px;*/
+    max-height: 300px;
+    border-radius: 20px;
+    border: 3px solid #2E2E2E;
+}
+
+.projectImage {
+    /*transform: translateY(0%);*/
+    transition: all 5s ease-in-out 0s;
+    max-height: 300px;
+    width: 100%;
+    height: 300px;
+
+
+    background-position: top;
+    background-size: cover;
+}
+
+.projectImage:hover {
+    /*transform: translateY(-38%);*/
+    background-position: bottom;
+}
+
+.projectCategory {
+    font-family: SFPro, serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F086CB;
+    letter-spacing: 0.1em;
+}
+
+.projectPreview:nth-of-type(2n+1) .projectCategory,
+.projectPreview:nth-of-type(2n+1) .projectName,
+.projectPreview:nth-of-type(2n+1) .projectDescription {
+    text-align: end;
+}
+
+
+.projectName {
+    font-family: MPlus, serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.projectDescription {
+    font-family: SFPro, serif;
+    line-height: 24px;
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: #313134;
+    box-shadow: 0 10px 30px -15px #202023;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.projectTags {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.projectPreview:nth-of-type(2n+1) .projectTags {
+    justify-content: end;
+}
+
+.projectTag {
+    font-family: MPlus, serif;
+    font-size: 14px;
+    color: #81E6D9;
+    cursor: default;
+}
+
+.projectLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.githubLogo {
+    width: 24px;
+    height: 24px;
+}
+
+.githubLogo path {
+    fill: #81E6D9;
+    transition: all 0.5s ease;
+}
+
+.githubLogo:hover path {
+    fill: #2A9687;
+}
+
+
+.linkLogo {
+    width: 24px;
+    height: 24px;
+}
+
+.linkLogo path {
+    stroke: #81E6D9;
+    transition: all 0.5s ease;
+}
+
+.linkLogo:hover path {
+    stroke: #2A9687;
+}

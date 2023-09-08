@@ -1,0 +1,278 @@
+@keyframes showDown {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showUp {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showRight {
+    from {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showFade {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+
+.floatButton {
+    display: none;
+}
+@media screen and (min-width: 1500px) and (orientation: landscape) {
+    .floatButton {
+        display: block;
+        position: fixed;
+        bottom: 48px;
+        right: 48px;
+    }
+}
+
+
+
+
+
+
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorPageTB {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorPage h1 {
+    font-family: SFPro, serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.errorPage p {
+    font-family: SFPro, serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #C2C2C2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 10px;
+}
+
+.editTitle {
+    font-family: SFPro, serif;
+    font-size: 20px;
+    color: #737373;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: showFade 1.5s ease-in-out;
+}
+
+.importProjectModalTitle {
+    font-family: SFPro, serif;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.importProjectModalTitleCategoryName {
+    font-weight: 600;
+}
+
+
+.importProjectButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogFilters {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.catalogDownFilters {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 75px;
+}
+
+.catalogSort {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.projectCommentsTitleContainer {
+    margin-top: 50px;
+    border-top: 1px solid #313134;
+}
+
+.projectCommentsTitle {
+    font-family: SFPro, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 52px;
+    margin-bottom: 20px;
+}
+
+.projectsTitle {
+    font-family: MPlus, serif;
+    font-size: 32px;
+    margin: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.projectDescription {
+    font-family: SFPro, serif;
+    padding: 0 10px;
+    /*text-indent: 20px;*/
+}
+
+.projectPage {
+    animation: showDown 1.5s ease-in-out;
+}
+.projectImage {
+    margin-bottom: 25px;
+
+}
+
+.projectImage img {
+    width: 650px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #2E2E2E;
+}
+
+.projectImage div {
+    border-radius: 20px;
+}
+
+.projectImagePreview {
+    max-height: 90vh;
+    width: auto;
+}
+
+.projectVideo {
+    width: 650px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.projectVideo video {
+    border-radius: 20px;
+    border: 3px solid #2E2E2E;
+}
+
+.projectBadge {
+    font-weight: 500;
+    background-color: rgba(226, 232, 240, 0.16);
+    width: max-content;
+    box-sizing: content-box;
+    padding: 2px 5px;
+    border-radius: 5px;
+    text-indent: 0;
+    color: white;
+}
+
+.projectBlockTitle {
+    font-family: MPlus, serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: #525252;
+    text-decoration-thickness: 4px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+
+.nestedList {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    counter-reset: item;
+    list-style: none;
+    text-indent: 0 !important;
+}
+
+.nestedListItem {
+    line-height: 1.6em;
+    display: flex;
+    margin: 2px 25px;
+}
+
+.nestedListItem::before {
+    counter-increment: item;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+.nestedListItemUnordered::before  {
+    content: "•";
+    color: #737373;
+    font-size: 18px;
+}

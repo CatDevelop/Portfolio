@@ -1,0 +1,61 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.1.4",
+    "@reduxjs/toolkit": "^1.9.3",
+    "@stfy/react-editor.js": "^1.0.3",
+    "antd": "^5.6.4",
+    "bootstrap": "^5.2.3",
+    "classnames": "^2.3.2",
+    "file-saver": "^2.0.5",
+    "md5": "^2.3.0",
+    "rc-pagination": "^3.3.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.4",
+    "react-input-mask": "^2.0.4",
+    "react-loading": "^2.0.3",
+    "react-player": "^2.13.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.8.2",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.2",
+    "react-toastify": "^9.1.1",
+    "video-react": "^0.16.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@editorjs/checklist": "^1.4.0",
+    "editorjs-change-case": "^0.0.3",
+    "editorjs-drag-drop": "^1.1.13",
+    "editorjs-inline-image": "^1.2.4",
+    "editorjs-toggle-block": "^0.3.10",
+    "simple-image-editorjs": "^1.4.0"
+  }
+}

@@ -1,0 +1,58 @@
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+}
+
+
+.timelineItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.isRight {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+}
+
+.myTimeline {
+    max-width: 670px;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+
+.timelineItemYear {
+    border-radius: 5px;
+    padding: 2px 4px;
+    color: rgb(154, 230, 180);
+    background-color: rgba(154, 230, 180, 0.16);
+    width: max-content;
+}
+
+.timelineItemText {
+    white-space: pre-line
+}
+
+.timelineItemText b {
+    font-size: 16px;
+    font-weight: 600;
+}
