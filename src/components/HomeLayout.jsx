@@ -13,7 +13,7 @@ const HomeLayout = () => {
             <WidthContent>
                 <Outlet/>
             </WidthContent>
-            <Footer/>
+            {/*<Footer/>*/}
         </div>
     );
 };
