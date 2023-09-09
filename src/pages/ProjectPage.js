@@ -79,7 +79,7 @@ export const ProjectPage = () => {
                     content: "https://automagshina.ru/"
                 }
             ],
-            images: [projectImagesAPI+"AutoMagShinaSCR1.png", projectImagesAPI+"AutoMagShinaSCR2.png", projectImagesAPI+"AutoMagShinaSCR3.png", projectImagesAPI+"AutoMagShinaSCR4.png", projectImagesAPI+"AutoMagShinaSCR5.png"]
+            images: [projectImagesAPI+"AutoMagShinaSRC1.png", projectImagesAPI+"AutoMagShinaSRC2.png", projectImagesAPI+"AutoMagShinaSRC3.png", projectImagesAPI+"AutoMagShinaSRC4.png", projectImagesAPI+"AutoMagShinaSRC5.png"]
         },
         {
             id: 1,
@@ -116,7 +116,7 @@ export const ProjectPage = () => {
                     content: "https://уралмебель74.рф"
                 }
             ],
-            images: [projectImagesAPI+"UralMebelSCR1.png", projectImagesAPI+"UralMebelSCR2.png", projectImagesAPI+"UralMebelSCR3.png", projectImagesAPI+"UralMebelSCR4.png"]
+            images: [projectImagesAPI+"UralMebelSRC1.png", projectImagesAPI+"UralMebelSRC2.png", projectImagesAPI+"UralMebelSRC3.png", projectImagesAPI+"UralMebelSRC4.png"]
         },
         {
             id: 2,
@@ -127,7 +127,7 @@ export const ProjectPage = () => {
                 <br/>
                 <p className={s.projectBadge}>Чем занимался в проекте</p>
                 <ul className={s.nestedList}>
-                    <li className={classNames(sa.nestedListItem, s.nestedListItemUnordered)}>
+                    <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
                         Обновление плагинов WordPress c 2011 года
                     </li>
                     <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
