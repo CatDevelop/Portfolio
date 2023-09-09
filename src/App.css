@@ -1,14 +1,14 @@
 /************ Custom Font ************/
 @font-face {
     font-family: MPlus;
-    src: url('./assets/font/Comfortaa-Regular.ttf');
+    src: url('./assets/font/Roundedmplus1c.ttf');
     font-weight: 400;
     font-display: fallback;
 }
 
 @font-face {
     font-family: MPlus;
-    src: url('./assets/font/Comfortaa-Bold.ttf');
+    src: url('./assets/font/Roundedmplus1cblack.ttf');
     font-weight: 900;
     font-display: fallback;
 }
@@ -16,14 +16,14 @@
 
 @font-face {
     font-family: MPlus;
-    src: url('./assets/font/Comfortaa-Light.ttf');
+    src: url('./assets/font/Roundedmplus1clight.ttf');
     font-weight: 300;
     font-display: fallback;
 }
 
 @font-face {
     font-family: MPlus;
-    src: url('./assets/font/Comfortaa-Medium.ttf');
+    src: url('./assets/font/Roundedmplus1cmedium.ttf');
     font-weight: 500;
     font-display: fallback;
 }
