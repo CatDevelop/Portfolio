@@ -60,6 +60,7 @@ export const BlogPage = () => {
     return (
         <div style={{paddingBottom: "48px"}}>
             <h1 className={s.projectsTitle}>Мой блог</h1>
+            <p style={{textAlign: "center"}}>В разработке</p>
         </div>
     )
 }
