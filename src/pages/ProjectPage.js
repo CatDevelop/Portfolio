@@ -16,6 +16,7 @@ import RecArtSRC1 from "../assets/img/RecArtSRC1.png";
 import RecArtSRC2 from "../assets/img/RecArtSRC2.png";
 import RecArtSRC3 from "../assets/img/RecArtSRC3.png";
 import RecArtSRC4 from "../assets/img/RecArtSRC4.png";
+
 import HrUsscSRC1 from "../assets/img/HrUsscSRC1.png";
 import HrUsscSRC2 from "../assets/img/HrUsscSRC2.png";
 import HrUsscSRC3 from "../assets/img/HrUsscSRC3.png";
@@ -23,6 +24,15 @@ import HrUsscSRC4 from "../assets/img/HrUsscSRC4.png";
 import HrUsscSRC5 from "../assets/img/HrUsscSRC5.png";
 import HrUsscSRC6 from "../assets/img/HrUsscSRC6.png";
 import HrUsscSRC7 from "../assets/img/HrUsscSRC7.png";
+
+import HrUsscSRC1Preview from "../assets/img/Preview/HrUsscSRC1.png";
+import HrUsscSRC2Preview from "../assets/img/Preview/HrUsscSRC2.png";
+import HrUsscSRC3Preview from "../assets/img/Preview/HrUsscSRC3.png";
+import HrUsscSRC4Preview from "../assets/img/Preview/HrUsscSRC4.png";
+import HrUsscSRC5Preview from "../assets/img/Preview/HrUsscSRC5.png";
+import HrUsscSRC6Preview from "../assets/img/Preview/HrUsscSRC6.png";
+import HrUsscSRC7Preview from "../assets/img/Preview/HrUsscSRC7.png";
+
 import HrUsscDemo from "../assets/video/HRUSSC-Demo.mp4";
 import P1SRC1 from "../assets/img/P1SRC1.png";
 import P1SRC2 from "../assets/img/P1SRC2.png";
@@ -55,7 +65,14 @@ import HeroReturnSRC2 from "../assets/img/HeroReturnSRC2.png";
 import HeroReturnSRC3 from "../assets/img/HeroReturnSRC3.png";
 import HeroReturnSRC4 from "../assets/img/HeroReturnSRC4.png";
 import HeroReturnSRC5 from "../assets/img/HeroReturnSRC5.png";
-import HeroReturnSRC6 from "../assets/img/HeroReturnSRC6.png";
+import HeroReturnSRC6 from "../assets/img/HeroReturnSRC6.jpg";
+
+import HeroReturnSRC1Preview from "../assets/img/Preview/HeroReturnSRC1.png";
+import HeroReturnSRC2Preview from "../assets/img/Preview/HeroReturnSRC2.png";
+import HeroReturnSRC3Preview from "../assets/img/Preview/HeroReturnSRC3.png";
+import HeroReturnSRC4Preview from "../assets/img/Preview/HeroReturnSRC4.png";
+import HeroReturnSRC5Preview from "../assets/img/Preview/HeroReturnSRC5.png";
+import HeroReturnSRC6Preview from "../assets/img/Preview/HeroReturnSRC6.png";
 import HeroReturnDemo from "../assets/video/HeroReturn-Demo.mp4";
 
 import PoolBookingSRC1 from "../assets/img/PoolBookingSRC1.png";
@@ -371,7 +388,8 @@ export const ProjectPage = () => {
                 }
             ],
             video: HrUsscDemo,
-            images: [HrUsscSRC1, HrUsscSRC2, HrUsscSRC3, HrUsscSRC4, HrUsscSRC5, HrUsscSRC6, HrUsscSRC7]
+            images: [HrUsscSRC1, HrUsscSRC2, HrUsscSRC3, HrUsscSRC4, HrUsscSRC5, HrUsscSRC6, HrUsscSRC7],
+            imagePreviews: [HrUsscSRC1Preview, HrUsscSRC2Preview, HrUsscSRC3Preview, HrUsscSRC4Preview, HrUsscSRC5Preview, HrUsscSRC6Preview, HrUsscSRC7Preview]
         },
         {
             id: 6,
@@ -554,7 +572,8 @@ export const ProjectPage = () => {
                 }
             ],
             video: HeroReturnDemo,
-            images: [HeroReturnSRC1, HeroReturnSRC2, HeroReturnSRC3, HeroReturnSRC4, HeroReturnSRC5, HeroReturnSRC6]
+            images: [HeroReturnSRC1, HeroReturnSRC2, HeroReturnSRC3, HeroReturnSRC4, HeroReturnSRC5, HeroReturnSRC6],
+            imagePreviews: [HeroReturnSRC1Preview, HeroReturnSRC2Preview, HeroReturnSRC3Preview, HeroReturnSRC4Preview, HeroReturnSRC5Preview, HeroReturnSRC6Preview]
         },
         {
             id: 8,
@@ -838,18 +857,19 @@ export const ProjectPage = () => {
                         <Image.PreviewGroup>
                             <h3 className={s.projectBlockTitle}>Скриншоты</h3>
                             {project.imagePreviews ? project.images.map((image, i) => {
-                                return <div className={s.projectImage} key={"projectImage"+i}>
-                                    <Image width={650} src={image} placeholder={
-                                        <Image
-                                            preview={false}
-                                            src={project.imagePreviews[i]}
-                                            width={100}
-                                        />
-                                    }/>
-                                </div>
-                            }) :
+                                    return <div className={s.projectImage} key={"projectImage" + i}>
+                                        <Image width={650} src={image} placeholder={
+                                            <Image
+                                                preview={false}
+                                                src={project.imagePreviews[i]}
+                                                width={650}
+                                                height={330}
+                                            />
+                                        }/>
+                                    </div>
+                                }) :
                                 project.images.map((image, i) => {
-                                    return <div className={s.projectImage} key={project.id+"projectImage"+i}>
+                                    return <div className={s.projectImage} key={project.id + "projectImage" + i}>
                                         <Image width={650} src={image}/>
                                     </div>
                                 })
