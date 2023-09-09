@@ -1,5 +1,4 @@
 import React from "react";
-import ConsoleAndPhoto from "../components/ConsoleAndPhoto/ConsoleAndPhoto";
 import Project1 from "../assets/img/Project1.png";
 import Project5 from "../assets/img/Project5.png";
 import Project6 from "../assets/img/Project6.png";
@@ -17,8 +16,6 @@ import {ProjectPreview} from "../components/ProjectPreview/ProjectPreview";
 import s from "./Pages.module.css"
 
 export const ProjectsPage = () => {
-    const toRotate = ["Frontend developer", "Web Designer", "UI/UX Designer", "Tech Analyst"]
-
     const projects = [
         {
             id: 0,
@@ -85,15 +82,6 @@ export const ProjectsPage = () => {
             projectURL: "https://portfoliohub.ru/",
             gitURL: "https://github.com/CatDevelop/URFU-portfolio-hub"
         },
-        // {
-        //     id: 7,
-        //     category: "Учебный (для партнёров)",
-        //     name: "U Summer School",
-        //     description: "Сервис для отбора студентов на летние стажировки в компанию УЦСБ через тестовые задания",
-        //     image: Project4,
-        //     tags: ["React", "Redux", "SCSS", "C#"],
-        //     gitURL: "https://github.com/CatDevelop/HeroReturnC"
-        // },
         {
             id: 7,
             category: "GameDev",
@@ -152,8 +140,6 @@ export const ProjectsPage = () => {
 
     return (
         <div>
-            <ConsoleAndPhoto toRotate={toRotate}/>
-
             <h1 className={s.projectsTitle}>Мои проекты</h1>
 
             <div className={s.projects}>

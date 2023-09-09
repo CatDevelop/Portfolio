@@ -2,7 +2,6 @@ import React from 'react';
 import {useParams} from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 import s from "./Pages.module.css"
-import ConsoleAndPhoto from "../components/ConsoleAndPhoto/ConsoleAndPhoto";
 import {Image} from 'antd'
 import AutoMagShinaSCR1 from "../assets/img/AutoMagShinaSCR1.png";
 import AutoMagShinaSCR2 from "../assets/img/AutoMagShinaSCR2.png";
@@ -35,6 +34,11 @@ import BeMyVoiceSRC1 from "../assets/img/BeMyVoiceSRC1.png";
 import BeMyVoiceSRC2 from "../assets/img/BeMyVoiceSRC2.png";
 import BeMyVoiceSRC3 from "../assets/img/BeMyVoiceSRC3.png";
 import BeMyVoiceSRC4 from "../assets/img/BeMyVoiceSRC4.png";
+
+import BeMyVoiceSRC1Preview from "../assets/img/Preview/BeMyVoiceSRC1.png";
+import BeMyVoiceSRC2Preview from "../assets/img/Preview/BeMyVoiceSRC2.png";
+import BeMyVoiceSRC3Preview from "../assets/img/Preview/BeMyVoiceSRC3.png";
+import BeMyVoiceSRC4Preview from "../assets/img/Preview/BeMyVoiceSRC4.png";
 
 import BeMyVoiceDemo from "../assets/video/BeMyVoice-Demo.mp4";
 
@@ -76,8 +80,6 @@ import ReactPlayer from 'react-player';
 
 export const ProjectPage = () => {
     const {projectID} = useParams();
-
-    const toRotate = ["Frontend developer", "Web Designer", "UI/UX Designer", "Tech Analyst"]
 
     const projects = [
         {
@@ -255,7 +257,8 @@ export const ProjectPage = () => {
                 // }
             ],
             video: BeMyVoiceDemo,
-            images: [BeMyVoiceSRC1, BeMyVoiceSRC2, BeMyVoiceSRC3, BeMyVoiceSRC4]
+            images: [BeMyVoiceSRC1, BeMyVoiceSRC2, BeMyVoiceSRC3, BeMyVoiceSRC4],
+            imagePreviews: [BeMyVoiceSRC1Preview, BeMyVoiceSRC2Preview, BeMyVoiceSRC3Preview, BeMyVoiceSRC4Preview]
         },
         {
             id: 4,
@@ -816,7 +819,6 @@ export const ProjectPage = () => {
 
     return (
         <div>
-            <ConsoleAndPhoto toRotate={toRotate}/>
             <div className={s.projectPage}>
                 <Breadcrumbs breadcrumbs={breadcrumbs}/>
                 <div className={s.projectDescription}>
@@ -835,9 +837,24 @@ export const ProjectPage = () => {
                     project.images ?
                         <Image.PreviewGroup>
                             <h3 className={s.projectBlockTitle}>Скриншоты</h3>
-                            {project.images.map(image => {
-                                return <div className={s.projectImage}><Image width={650} src={image}/></div>
-                            })}
+                            {project.imagePreviews ? project.images.map((image, i) => {
+                                return <div className={s.projectImage} key={"projectImage"+i}>
+                                    <Image width={650} src={image} placeholder={
+                                        <Image
+                                            preview={false}
+                                            src={project.imagePreviews[i]}
+                                            width={100}
+                                        />
+                                    }/>
+                                </div>
+                            }) :
+                                project.images.map((image, i) => {
+                                    return <div className={s.projectImage} key={project.id+"projectImage"+i}>
+                                        <Image width={650} src={image}/>
+                                    </div>
+                                })
+
+                            }
                         </Image.PreviewGroup> : <></>
                 }
 

@@ -3,10 +3,9 @@ import React from 'react'
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {ProjectsPage} from "./pages/ProjectsPage";
 import {WelcomePage} from "./pages/WelcomePage";
-import ProfileLayout from "./components/ProfileLayout";
 import ScrollToTop from "./hoc/ScrollToTop";
 import {ProjectPage} from "./pages/ProjectPage";
-import HomeLayout from "./components/HomeLayout";
+import Layout from "./components/Layout";
 
 function App() {
     return (
@@ -14,13 +13,13 @@ function App() {
             <ScrollToTop>
                 <Routes>
 
-                    <Route path='/' element={<ProfileLayout/>}>
+                    <Route path='/' element={<Layout layout={'main'}/>}>
                         <Route index element={<WelcomePage/>}/>
                         <Route path='work/:projectID' element={<ProjectPage/>}/>
 
                         {/*<Route path='components' element={<ComponentsPage/>}/>*/}
                     </Route>
-                    <Route path='/' element={<HomeLayout/>}>
+                    <Route path='/' element={<Layout layout={'width'}/>}>
                         <Route path='works' element={<ProjectsPage/>}/>
 
                     </Route>

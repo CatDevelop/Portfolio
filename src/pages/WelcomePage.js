@@ -1,5 +1,4 @@
 import {useNavigate} from "react-router-dom";
-import ConsoleAndPhoto from "../components/ConsoleAndPhoto/ConsoleAndPhoto";
 import InfoBlock from "../components/InfoBlock/InfoBlock";
 import React from "react";
 import TechStack from "../components/TechStack/TechStack";
@@ -10,8 +9,6 @@ import s from "./Pages.module.css";
 
 export const WelcomePage = () => {
     let navigate = useNavigate();
-
-    const toRotate = ["Frontend developer", "Web Designer", "UI/UX Designer", "Tech Analyst"]
 
     const items = [
         {
@@ -62,10 +59,9 @@ export const WelcomePage = () => {
 
     return (
         <div style={{paddingBottom: "48px"}}>
-            <ConsoleAndPhoto toRotate={toRotate}/>
             <TechStack/>
 
-            <div>
+            <div onClick={() => navigate("/work/1")}>
                 <InfoBlock header="Обо мне"
                            content={
                                "<p>Меня зовут Максим, я продуктовый разработчик, специализирующийся на React. Cейчас обучаюсь на 2 курсе УрФУ имени первого Президента России Б.Н. Ельцина, направление «Программная инженерия».</p><br/>" +
