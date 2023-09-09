@@ -11,7 +11,7 @@ export default function ProfileLayout () {
             <MainContent>
                 <Outlet/>
             </MainContent>
-            {/*<Footer/>*/}
+            <Footer/>
         </div>
     );
 };

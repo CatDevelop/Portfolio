@@ -120,7 +120,7 @@ export const WelcomePage = () => {
 
             <MyTimeline items={items}/>
 
-            <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center'}}>
+            <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center', marginBottom: "48px"}}>
                 <Button onClick={() => navigate("/works")}>Мои проекты</Button>
             </div>
         </div>
