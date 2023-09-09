@@ -3,27 +3,27 @@ import {useParams} from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 import s from "./Pages.module.css"
 import {Image} from 'antd'
-import AutoMagShinaSCR1 from "../assets/img/AutoMagShinaSCR1.png";
-import AutoMagShinaSCR2 from "../assets/img/AutoMagShinaSCR2.png";
-import AutoMagShinaSCR3 from "../assets/img/AutoMagShinaSCR3.png";
-import AutoMagShinaSCR4 from "../assets/img/AutoMagShinaSCR4.png";
-import AutoMagShinaSCR5 from "../assets/img/AutoMagShinaSCR5.png";
-import UralMebelSCR1 from "../assets/img/UralMebelSCR1.png";
-import UralMebelSCR2 from "../assets/img/UralMebelSCR2.png";
-import UralMebelSCR3 from "../assets/img/UralMebelSCR3.png";
-import UralMebelSCR4 from "../assets/img/UralMebelSCR4.png";
-import RecArtSRC1 from "../assets/img/RecArtSRC1.png";
-import RecArtSRC2 from "../assets/img/RecArtSRC2.png";
-import RecArtSRC3 from "../assets/img/RecArtSRC3.png";
-import RecArtSRC4 from "../assets/img/RecArtSRC4.png";
+import AutoMagShinaSCR1 from "../assets/img/Projects/AutoMagShinaSCR1.png";
+import AutoMagShinaSCR2 from "../assets/img/Projects/AutoMagShinaSCR2.png";
+import AutoMagShinaSCR3 from "../assets/img/Projects/AutoMagShinaSCR3.png";
+import AutoMagShinaSCR4 from "../assets/img/Projects/AutoMagShinaSCR4.png";
+import AutoMagShinaSCR5 from "../assets/img/Projects/AutoMagShinaSCR5.png";
+import UralMebelSCR1 from "../assets/img/Projects/UralMebelSCR1.png";
+import UralMebelSCR2 from "../assets/img/Projects/UralMebelSCR2.png";
+import UralMebelSCR3 from "../assets/img/Projects/UralMebelSCR3.png";
+import UralMebelSCR4 from "../assets/img/Projects/UralMebelSCR4.png";
+import RecArtSRC1 from "../assets/img/Projects/RecArtSRC1.png";
+import RecArtSRC2 from "../assets/img/Projects/RecArtSRC2.png";
+import RecArtSRC3 from "../assets/img/Projects/RecArtSRC3.png";
+import RecArtSRC4 from "../assets/img/Projects/RecArtSRC4.png";
 
-import HrUsscSRC1 from "../assets/img/HrUsscSRC1.png";
-import HrUsscSRC2 from "../assets/img/HrUsscSRC2.png";
-import HrUsscSRC3 from "../assets/img/HrUsscSRC3.png";
-import HrUsscSRC4 from "../assets/img/HrUsscSRC4.png";
-import HrUsscSRC5 from "../assets/img/HrUsscSRC5.png";
-import HrUsscSRC6 from "../assets/img/HrUsscSRC6.png";
-import HrUsscSRC7 from "../assets/img/HrUsscSRC7.png";
+import HrUsscSRC1 from "../assets/img/Projects/HrUsscSRC1.png";
+import HrUsscSRC2 from "../assets/img/Projects/HrUsscSRC2.png";
+import HrUsscSRC3 from "../assets/img/Projects/HrUsscSRC3.png";
+import HrUsscSRC4 from "../assets/img/Projects/HrUsscSRC4.png";
+import HrUsscSRC5 from "../assets/img/Projects/HrUsscSRC5.png";
+import HrUsscSRC6 from "../assets/img/Projects/HrUsscSRC6.png";
+import HrUsscSRC7 from "../assets/img/Projects/HrUsscSRC7.png";
 
 import HrUsscSRC1Preview from "../assets/img/Preview/HrUsscSRC1.png";
 import HrUsscSRC2Preview from "../assets/img/Preview/HrUsscSRC2.png";
@@ -34,16 +34,17 @@ import HrUsscSRC6Preview from "../assets/img/Preview/HrUsscSRC6.png";
 import HrUsscSRC7Preview from "../assets/img/Preview/HrUsscSRC7.png";
 
 import HrUsscDemo from "../assets/video/HRUSSC-Demo.mp4";
-import P1SRC1 from "../assets/img/P1SRC1.png";
-import P1SRC2 from "../assets/img/P1SRC2.png";
-import P1SRC3 from "../assets/img/P1SRC3.png";
-import P1SRC4 from "../assets/img/P1SRC4.png";
-import P1SRC5 from "../assets/img/P1SRC5.png";
-import P1SRC6 from "../assets/img/P1SRC6.png";
-import BeMyVoiceSRC1 from "../assets/img/BeMyVoiceSRC1.png";
-import BeMyVoiceSRC2 from "../assets/img/BeMyVoiceSRC2.png";
-import BeMyVoiceSRC3 from "../assets/img/BeMyVoiceSRC3.png";
-import BeMyVoiceSRC4 from "../assets/img/BeMyVoiceSRC4.png";
+import P1SRC1 from "../assets/img/Projects/P1SRC1.png";
+import P1SRC2 from "../assets/img/Projects/P1SRC2.png";
+import P1SRC3 from "../assets/img/Projects/P1SRC3.png";
+import P1SRC4 from "../assets/img/Projects/P1SRC4.png";
+import P1SRC5 from "../assets/img/Projects/P1SRC5.png";
+import P1SRC6 from "../assets/img/Projects/P1SRC6.png";
+
+import BeMyVoiceSRC1 from "../assets/img/Projects/BeMyVoiceSRC1.png";
+import BeMyVoiceSRC2 from "../assets/img/Projects/BeMyVoiceSRC2.png";
+import BeMyVoiceSRC3 from "../assets/img/Projects/BeMyVoiceSRC3.png";
+import BeMyVoiceSRC4 from "../assets/img/Projects/BeMyVoiceSRC4.png";
 
 import BeMyVoiceSRC1Preview from "../assets/img/Preview/BeMyVoiceSRC1.png";
 import BeMyVoiceSRC2Preview from "../assets/img/Preview/BeMyVoiceSRC2.png";
@@ -52,20 +53,20 @@ import BeMyVoiceSRC4Preview from "../assets/img/Preview/BeMyVoiceSRC4.png";
 
 import BeMyVoiceDemo from "../assets/video/BeMyVoice-Demo.mp4";
 
-import PortfolioHubSRC1 from "../assets/img/PortfolioHubSRC1.png";
-import PortfolioHubSRC2 from "../assets/img/PortfolioHubSRC2.png";
-import PortfolioHubSRC3 from "../assets/img/PortfolioHubSRC3.png";
-import PortfolioHubSRC4 from "../assets/img/PortfolioHubSRC4.png";
-import PortfolioHubSRC5 from "../assets/img/PortfolioHubSRC5.png";
-import PortfolioHubSRC6 from "../assets/img/PortfolioHubSRC6.png";
+import PortfolioHubSRC1 from "../assets/img/Projects/PortfolioHubSRC1.png";
+import PortfolioHubSRC2 from "../assets/img/Projects/PortfolioHubSRC2.png";
+import PortfolioHubSRC3 from "../assets/img/Projects/PortfolioHubSRC3.png";
+import PortfolioHubSRC4 from "../assets/img/Projects/PortfolioHubSRC4.png";
+import PortfolioHubSRC5 from "../assets/img/Projects/PortfolioHubSRC5.png";
+import PortfolioHubSRC6 from "../assets/img/Projects/PortfolioHubSRC6.png";
 import PortfolioHubDemo from "../assets/video/PortfolioHub-Demo.mp4";
 
-import HeroReturnSRC1 from "../assets/img/HeroReturnSRC1.png";
-import HeroReturnSRC2 from "../assets/img/HeroReturnSRC2.png";
-import HeroReturnSRC3 from "../assets/img/HeroReturnSRC3.png";
-import HeroReturnSRC4 from "../assets/img/HeroReturnSRC4.png";
-import HeroReturnSRC5 from "../assets/img/HeroReturnSRC5.png";
-import HeroReturnSRC6 from "../assets/img/HeroReturnSRC6.jpg";
+import HeroReturnSRC1 from "../assets/img/Projects/HeroReturnSRC1.png";
+import HeroReturnSRC2 from "../assets/img/Projects/HeroReturnSRC2.png";
+import HeroReturnSRC3 from "../assets/img/Projects/HeroReturnSRC3.png";
+import HeroReturnSRC4 from "../assets/img/Projects/HeroReturnSRC4.png";
+import HeroReturnSRC5 from "../assets/img/Projects/HeroReturnSRC5.png";
+import HeroReturnSRC6 from "../assets/img/Projects/HeroReturnSRC6.jpg";
 
 import HeroReturnSRC1Preview from "../assets/img/Preview/HeroReturnSRC1.png";
 import HeroReturnSRC2Preview from "../assets/img/Preview/HeroReturnSRC2.png";
@@ -75,21 +76,21 @@ import HeroReturnSRC5Preview from "../assets/img/Preview/HeroReturnSRC5.png";
 import HeroReturnSRC6Preview from "../assets/img/Preview/HeroReturnSRC6.png";
 import HeroReturnDemo from "../assets/video/HeroReturn-Demo.mp4";
 
-import PoolBookingSRC1 from "../assets/img/PoolBookingSRC1.png";
-import PoolBookingSRC2 from "../assets/img/PoolBookingSRC2.png";
-import PoolBookingSRC3 from "../assets/img/PoolBookingSRC3.png";
+import PoolBookingSRC1 from "../assets/img/Projects/PoolBookingSRC1.png";
+import PoolBookingSRC2 from "../assets/img/Projects/PoolBookingSRC2.png";
+import PoolBookingSRC3 from "../assets/img/Projects/PoolBookingSRC3.png";
 
-import LibrarySRC1 from "../assets/img/LibrarySRC1.png";
-import LibrarySRC2 from "../assets/img/LibrarySRC2.png";
-import LibrarySRC3 from "../assets/img/LibrarySRC3.png";
+import LibrarySRC1 from "../assets/img/Projects/LibrarySRC1.png";
+import LibrarySRC2 from "../assets/img/Projects/LibrarySRC2.png";
+import LibrarySRC3 from "../assets/img/Projects/LibrarySRC3.png";
 
-import ITSeconomySRC1 from "../assets/img/ITSeconomySRC1.png";
-import ITSeconomySRC2 from "../assets/img/ITSeconomySRC2.png";
-import ITSeconomySRC3 from "../assets/img/ITSeconomySRC3.png";
-import ITSeconomySRC4 from "../assets/img/ITSeconomySRC4.png";
-import TreesVisualizationSRC1 from "../assets/img/TreesVisualizationSRC1.png";
-import GraphicsSRC1 from "../assets/img/GraphicsSRC1.png";
-import GraphicsSRC2 from "../assets/img/GraphicsSRC2.png";
+import ITSeconomySRC1 from "../assets/img/Projects/ITSeconomySRC1.png";
+import ITSeconomySRC2 from "../assets/img/Projects/ITSeconomySRC2.png";
+import ITSeconomySRC3 from "../assets/img/Projects/ITSeconomySRC3.png";
+import ITSeconomySRC4 from "../assets/img/Projects/ITSeconomySRC4.png";
+import TreesVisualizationSRC1 from "../assets/img/Projects/TreesVisualizationSRC1.png";
+import GraphicsSRC1 from "../assets/img/Projects/GraphicsSRC1.png";
+import GraphicsSRC2 from "../assets/img/Projects/GraphicsSRC2.png";
 import ProjectInformationBlock from "../components/ProjectInformationBlock/ProjectInformationBlock";
 import {NotFoundPage} from "./NotFoundPage";
 import classNames from 'classnames'
@@ -97,6 +98,8 @@ import ReactPlayer from 'react-player';
 
 export const ProjectPage = () => {
     const {projectID} = useParams();
+    const APIsrc = "https://www.ren-design.ru/api/portfolio/1.0/"
+    const projectImagesAPI = APIsrc+"images/projects/"
 
     const projects = [
         {
@@ -143,7 +146,7 @@ export const ProjectPage = () => {
                     content: "https://automagshina.ru/"
                 }
             ],
-            images: [AutoMagShinaSCR1, AutoMagShinaSCR2, AutoMagShinaSCR3, AutoMagShinaSCR4, AutoMagShinaSCR5]
+            images: [projectImagesAPI+"AutoMagShinaSCR1.png", projectImagesAPI+"AutoMagShinaSCR2.png", projectImagesAPI+"AutoMagShinaSCR3.png", projectImagesAPI+"AutoMagShinaSCR4.png", projectImagesAPI+"AutoMagShinaSCR5.png"]
         },
         {
             id: 1,
@@ -180,7 +183,7 @@ export const ProjectPage = () => {
                     content: "https://уралмебель74.рф"
                 }
             ],
-            images: [UralMebelSCR1, UralMebelSCR2, UralMebelSCR3, UralMebelSCR4]
+            images: [projectImagesAPI+"UralMebelSCR1.png", projectImagesAPI+"UralMebelSCR2.png", projectImagesAPI+"UralMebelSCR3.png", projectImagesAPI+"UralMebelSCR4.png"]
         },
         {
             id: 2,
@@ -213,7 +216,7 @@ export const ProjectPage = () => {
                     content: "https://рекарт.рф"
                 }
             ],
-            images: [RecArtSRC1, RecArtSRC2, RecArtSRC3, RecArtSRC4]
+            images: [projectImagesAPI+"RecArtSRC1.png", projectImagesAPI+"RecArtSRC2.png", projectImagesAPI+"RecArtSRC3.png", projectImagesAPI+"RecArtSRC4.png"]
         },
         {
             id: 3,

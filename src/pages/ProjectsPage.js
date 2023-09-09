@@ -11,7 +11,7 @@ import Project12 from "../assets/img/Project12.jpg";
 import Project13 from "../assets/img/Project13.png";
 import Project14 from "../assets/img/Project14.png";
 import Project15 from "../assets/img/Project15.png";
-import UralMebelSCR1 from "../assets/img/UralMebelSCR1.png";
+import UralMebelSCR1 from "../assets/img/Projects/UralMebelSCR1.png";
 import {ProjectPreview} from "../components/ProjectPreview/ProjectPreview";
 import s from "./Pages.module.css"
 
