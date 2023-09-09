@@ -32,6 +32,11 @@ function NavBar() {
                                     Проекты
                                 </Link>
                             </li>
+                            <li className={s.navbarItem}>
+                                <Link className={s.navbarLink} to="blog">
+                                    Блог
+                                </Link>
+                            </li>
                         </>
                     </ul>
                 </div>

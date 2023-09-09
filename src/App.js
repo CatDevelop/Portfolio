@@ -6,6 +6,7 @@ import {WelcomePage} from "./pages/WelcomePage";
 import ScrollToTop from "./hoc/ScrollToTop";
 import {ProjectPage} from "./pages/ProjectPage";
 import Layout from "./components/Layout";
+import {BlogPage} from "./pages/BlogPage";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path='/' element={<Layout layout={'main'}/>}>
                         <Route index element={<WelcomePage/>}/>
                         <Route path='work/:projectID' element={<ProjectPage/>}/>
+                        <Route path='blog' element={<BlogPage/>}/>
 
                         {/*<Route path='components' element={<ComponentsPage/>}/>*/}
                     </Route>
