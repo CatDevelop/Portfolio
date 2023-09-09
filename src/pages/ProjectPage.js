@@ -3,27 +3,6 @@ import {useParams} from "react-router-dom";
 import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 import s from "./Pages.module.css"
 import {Image} from 'antd'
-import AutoMagShinaSCR1 from "../assets/img/Projects/AutoMagShinaSCR1.png";
-import AutoMagShinaSCR2 from "../assets/img/Projects/AutoMagShinaSCR2.png";
-import AutoMagShinaSCR3 from "../assets/img/Projects/AutoMagShinaSCR3.png";
-import AutoMagShinaSCR4 from "../assets/img/Projects/AutoMagShinaSCR4.png";
-import AutoMagShinaSCR5 from "../assets/img/Projects/AutoMagShinaSCR5.png";
-import UralMebelSCR1 from "../assets/img/Projects/UralMebelSCR1.png";
-import UralMebelSCR2 from "../assets/img/Projects/UralMebelSCR2.png";
-import UralMebelSCR3 from "../assets/img/Projects/UralMebelSCR3.png";
-import UralMebelSCR4 from "../assets/img/Projects/UralMebelSCR4.png";
-import RecArtSRC1 from "../assets/img/Projects/RecArtSRC1.png";
-import RecArtSRC2 from "../assets/img/Projects/RecArtSRC2.png";
-import RecArtSRC3 from "../assets/img/Projects/RecArtSRC3.png";
-import RecArtSRC4 from "../assets/img/Projects/RecArtSRC4.png";
-
-import HrUsscSRC1 from "../assets/img/Projects/HrUsscSRC1.png";
-import HrUsscSRC2 from "../assets/img/Projects/HrUsscSRC2.png";
-import HrUsscSRC3 from "../assets/img/Projects/HrUsscSRC3.png";
-import HrUsscSRC4 from "../assets/img/Projects/HrUsscSRC4.png";
-import HrUsscSRC5 from "../assets/img/Projects/HrUsscSRC5.png";
-import HrUsscSRC6 from "../assets/img/Projects/HrUsscSRC6.png";
-import HrUsscSRC7 from "../assets/img/Projects/HrUsscSRC7.png";
 
 import HrUsscSRC1Preview from "../assets/img/Preview/HrUsscSRC1.png";
 import HrUsscSRC2Preview from "../assets/img/Preview/HrUsscSRC2.png";
@@ -33,40 +12,10 @@ import HrUsscSRC5Preview from "../assets/img/Preview/HrUsscSRC5.png";
 import HrUsscSRC6Preview from "../assets/img/Preview/HrUsscSRC6.png";
 import HrUsscSRC7Preview from "../assets/img/Preview/HrUsscSRC7.png";
 
-import HrUsscDemo from "../assets/video/HRUSSC-Demo.mp4";
-import P1SRC1 from "../assets/img/Projects/P1SRC1.png";
-import P1SRC2 from "../assets/img/Projects/P1SRC2.png";
-import P1SRC3 from "../assets/img/Projects/P1SRC3.png";
-import P1SRC4 from "../assets/img/Projects/P1SRC4.png";
-import P1SRC5 from "../assets/img/Projects/P1SRC5.png";
-import P1SRC6 from "../assets/img/Projects/P1SRC6.png";
-
-import BeMyVoiceSRC1 from "../assets/img/Projects/BeMyVoiceSRC1.png";
-import BeMyVoiceSRC2 from "../assets/img/Projects/BeMyVoiceSRC2.png";
-import BeMyVoiceSRC3 from "../assets/img/Projects/BeMyVoiceSRC3.png";
-import BeMyVoiceSRC4 from "../assets/img/Projects/BeMyVoiceSRC4.png";
-
 import BeMyVoiceSRC1Preview from "../assets/img/Preview/BeMyVoiceSRC1.png";
 import BeMyVoiceSRC2Preview from "../assets/img/Preview/BeMyVoiceSRC2.png";
 import BeMyVoiceSRC3Preview from "../assets/img/Preview/BeMyVoiceSRC3.png";
 import BeMyVoiceSRC4Preview from "../assets/img/Preview/BeMyVoiceSRC4.png";
-
-import BeMyVoiceDemo from "../assets/video/BeMyVoice-Demo.mp4";
-
-import PortfolioHubSRC1 from "../assets/img/Projects/PortfolioHubSRC1.png";
-import PortfolioHubSRC2 from "../assets/img/Projects/PortfolioHubSRC2.png";
-import PortfolioHubSRC3 from "../assets/img/Projects/PortfolioHubSRC3.png";
-import PortfolioHubSRC4 from "../assets/img/Projects/PortfolioHubSRC4.png";
-import PortfolioHubSRC5 from "../assets/img/Projects/PortfolioHubSRC5.png";
-import PortfolioHubSRC6 from "../assets/img/Projects/PortfolioHubSRC6.png";
-import PortfolioHubDemo from "../assets/video/PortfolioHub-Demo.mp4";
-
-import HeroReturnSRC1 from "../assets/img/Projects/HeroReturnSRC1.png";
-import HeroReturnSRC2 from "../assets/img/Projects/HeroReturnSRC2.png";
-import HeroReturnSRC3 from "../assets/img/Projects/HeroReturnSRC3.png";
-import HeroReturnSRC4 from "../assets/img/Projects/HeroReturnSRC4.png";
-import HeroReturnSRC5 from "../assets/img/Projects/HeroReturnSRC5.png";
-import HeroReturnSRC6 from "../assets/img/Projects/HeroReturnSRC6.jpg";
 
 import HeroReturnSRC1Preview from "../assets/img/Preview/HeroReturnSRC1.png";
 import HeroReturnSRC2Preview from "../assets/img/Preview/HeroReturnSRC2.png";
@@ -74,23 +23,6 @@ import HeroReturnSRC3Preview from "../assets/img/Preview/HeroReturnSRC3.png";
 import HeroReturnSRC4Preview from "../assets/img/Preview/HeroReturnSRC4.png";
 import HeroReturnSRC5Preview from "../assets/img/Preview/HeroReturnSRC5.png";
 import HeroReturnSRC6Preview from "../assets/img/Preview/HeroReturnSRC6.png";
-import HeroReturnDemo from "../assets/video/HeroReturn-Demo.mp4";
-
-import PoolBookingSRC1 from "../assets/img/Projects/PoolBookingSRC1.png";
-import PoolBookingSRC2 from "../assets/img/Projects/PoolBookingSRC2.png";
-import PoolBookingSRC3 from "../assets/img/Projects/PoolBookingSRC3.png";
-
-import LibrarySRC1 from "../assets/img/Projects/LibrarySRC1.png";
-import LibrarySRC2 from "../assets/img/Projects/LibrarySRC2.png";
-import LibrarySRC3 from "../assets/img/Projects/LibrarySRC3.png";
-
-import ITSeconomySRC1 from "../assets/img/Projects/ITSeconomySRC1.png";
-import ITSeconomySRC2 from "../assets/img/Projects/ITSeconomySRC2.png";
-import ITSeconomySRC3 from "../assets/img/Projects/ITSeconomySRC3.png";
-import ITSeconomySRC4 from "../assets/img/Projects/ITSeconomySRC4.png";
-import TreesVisualizationSRC1 from "../assets/img/Projects/TreesVisualizationSRC1.png";
-import GraphicsSRC1 from "../assets/img/Projects/GraphicsSRC1.png";
-import GraphicsSRC2 from "../assets/img/Projects/GraphicsSRC2.png";
 import ProjectInformationBlock from "../components/ProjectInformationBlock/ProjectInformationBlock";
 import {NotFoundPage} from "./NotFoundPage";
 import classNames from 'classnames'
@@ -100,6 +32,7 @@ export const ProjectPage = () => {
     const {projectID} = useParams();
     const APIsrc = "https://www.ren-design.ru/api/portfolio/1.0/"
     const projectImagesAPI = APIsrc+"images/projects/"
+    const projectVideosAPI = APIsrc+"video/"
 
     const projects = [
         {
@@ -276,8 +209,8 @@ export const ProjectPage = () => {
                 //     content: "https://рекарт.рф"
                 // }
             ],
-            video: BeMyVoiceDemo,
-            images: [BeMyVoiceSRC1, BeMyVoiceSRC2, BeMyVoiceSRC3, BeMyVoiceSRC4],
+            video: projectVideosAPI+"BeMyVoiceDemo.mp4",
+            images: [projectImagesAPI+"BeMyVoiceSRC1.png", projectImagesAPI+"BeMyVoiceSRC2.png", projectImagesAPI+"BeMyVoiceSRC3.png", projectImagesAPI+"BeMyVoiceSRC4.png"],
             imagePreviews: [BeMyVoiceSRC1Preview, BeMyVoiceSRC2Preview, BeMyVoiceSRC3Preview, BeMyVoiceSRC4Preview]
         },
         {
@@ -333,7 +266,7 @@ export const ProjectPage = () => {
                 //     content: "https://рекарт.рф"
                 // }
             ],
-            images: [P1SRC1, P1SRC2, P1SRC3, P1SRC4, P1SRC5, P1SRC6]
+            images: [projectImagesAPI+"P1SRC1.png", projectImagesAPI+"P1SRC2.png", projectImagesAPI+"P1SRC3.png", projectImagesAPI+"P1SRC4.png", projectImagesAPI+"P1SRC5.png", projectImagesAPI+"P1SRC6.png"]
         },
         {
             id: 5,
@@ -390,8 +323,8 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/URFU-HR-USSC"
                 }
             ],
-            video: HrUsscDemo,
-            images: [HrUsscSRC1, HrUsscSRC2, HrUsscSRC3, HrUsscSRC4, HrUsscSRC5, HrUsscSRC6, HrUsscSRC7],
+            video: projectVideosAPI+"HRUSSC-Demo.mp4",
+            images: [projectImagesAPI+"HrUsscSRC1.png", projectImagesAPI+"HrUsscSRC2.png", projectImagesAPI+"HrUsscSRC3.png", projectImagesAPI+"HrUsscSRC4.png", projectImagesAPI+"HrUsscSRC5.png", projectImagesAPI+"HrUsscSRC6.png", projectImagesAPI+"HrUsscSRC7.png"],
             imagePreviews: [HrUsscSRC1Preview, HrUsscSRC2Preview, HrUsscSRC3Preview, HrUsscSRC4Preview, HrUsscSRC5Preview, HrUsscSRC6Preview, HrUsscSRC7Preview]
         },
         {
@@ -467,68 +400,9 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/URFU-portfolio-hub"
                 }
             ],
-            video: PortfolioHubDemo,
-            images: [PortfolioHubSRC1, PortfolioHubSRC2, PortfolioHubSRC3, PortfolioHubSRC4, PortfolioHubSRC5, PortfolioHubSRC6]
+            video: projectVideosAPI+"PortfolioHub-Demo.mp4",
+            images: [projectImagesAPI+"PortfolioHubSRC1.png", projectImagesAPI+"PortfolioHubSRC2.png", projectImagesAPI+"PortfolioHubSRC3.png", projectImagesAPI+"PortfolioHubSRC4.png", projectImagesAPI+"PortfolioHubSRC5.png", projectImagesAPI+"PortfolioHubSRC6.png"]
         },
-        // {
-        //     id: 7,
-        //     name: "U Summer School",
-        //     year: 2023,
-        //     description: <div>
-        //         <p>Сервис для отбора студентов на летние стажировки в компанию УЦСБ через тестовые задания.</p>
-        //         <p>Проект выполнен по заказу студентов 2 курса УрФУ для дисциплины "Проектный практикум"</p>
-        //         <br/>
-        //         <p className={s.projectBadge}>Возможности сервиса</p>
-        //         <ul className={s.nestedList}>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Захват видео с камеры
-        //             </li>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Превращение жестов в текст с помощью нейросети от Сбера SLT2TXT
-        //             </li>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Озвучка текста с помощью нейросети от Сбера Salute Speech
-        //             </li>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Захват звука с компьютера и преобразование его в текст (Salute Speech) с определением эмоции
-        //                 собеседника: позитивная, нейтральная, негативная
-        //             </li>
-        //         </ul>
-        //         <br/>
-        //         <p className={s.projectBadge}>Чем занимался в проекте</p>
-        //         <ul className={s.nestedList}>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Разработка архитектуры приложения и схемы взаимодействия микросервисов
-        //             </li>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Разработка дизайна приложения
-        //             </li>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Разработка десктопного приложения на React+Electron
-        //             </li>
-        //             <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
-        //                 Создание API на Python для подключения нейронной сети SLT2TXT к приложению
-        //             </li>
-        //         </ul>
-        //     </div>,
-        //     informationBlocks: [
-        //         {
-        //             id: 0,
-        //             blockType: "Text",
-        //             blockTitle: "Стек",
-        //             content: "React, Redux, HTML, CSS"
-        //         },
-        //         {
-        //             id: 1,
-        //             blockType: "Link",
-        //             blockTitle: "GitHub",
-        //             linkText: "URFU-HR-USSC",
-        //             content: "https://github.com/CatDevelop/URFU-HR-USSC"
-        //         }
-        //     ],
-        //     video: HrUsscDemo,
-        //     images: [HrUsscSRC1, HrUsscSRC2, HrUsscSRC3, HrUsscSRC4, HrUsscSRC5, HrUsscSRC6, HrUsscSRC7]
-        // },
         {
             id: 7,
             name: "HeroReturn",
@@ -574,8 +448,8 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/HeroReturnC"
                 }
             ],
-            video: HeroReturnDemo,
-            images: [HeroReturnSRC1, HeroReturnSRC2, HeroReturnSRC3, HeroReturnSRC4, HeroReturnSRC5, HeroReturnSRC6],
+            video: projectVideosAPI+"HeroReturn-Demo.mp4",
+            images: [projectImagesAPI+"HeroReturnSRC1.png", projectImagesAPI+"HeroReturnSRC2.png", projectImagesAPI+"HeroReturnSRC3.png", projectImagesAPI+"HeroReturnSRC4.png", projectImagesAPI+"HeroReturnSRC5.png", projectImagesAPI+"HeroReturnSRC6.jpg"],
             imagePreviews: [HeroReturnSRC1Preview, HeroReturnSRC2Preview, HeroReturnSRC3Preview, HeroReturnSRC4Preview, HeroReturnSRC5Preview, HeroReturnSRC6Preview]
         },
         {
@@ -627,7 +501,7 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/URFU-pool-booking"
                 }
             ],
-            images: [PoolBookingSRC1, PoolBookingSRC2, PoolBookingSRC3]
+            images: [projectImagesAPI+"PoolBookingSRC1.png", projectImagesAPI+"PoolBookingSRC2.png", projectImagesAPI+"PoolBookingSRC3.png"]
         },
         {
             id: 9,
@@ -691,7 +565,7 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/Library"
                 }
             ],
-            images: [LibrarySRC1, LibrarySRC2, LibrarySRC3]
+            images: [projectImagesAPI+"LibrarySRC1.png", projectImagesAPI+"LibrarySRC2.png", projectImagesAPI+"LibrarySRC3.png"]
         },
         {
             id: 10,
@@ -735,7 +609,7 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/ITS-Economy"
                 }
             ],
-            images: [ITSeconomySRC1, ITSeconomySRC3, ITSeconomySRC4, ITSeconomySRC2]
+            images: [projectImagesAPI+"ITSeconomySRC1.png", projectImagesAPI+"ITSeconomySRC3.png", projectImagesAPI+"ITSeconomySRC4.png", projectImagesAPI+"ITSeconomySRC2.png"]
         },
         {
             id: 11,
@@ -782,7 +656,7 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/IT-School/tree/main/SecondCourse/TreesVisualization"
                 }
             ],
-            images: [TreesVisualizationSRC1]
+            images: [projectImagesAPI+"TreesVisualizationSRC1.png"]
         },
         {
             id: 12,
@@ -824,7 +698,7 @@ export const ProjectPage = () => {
                     content: "https://github.com/CatDevelop/IT-School/tree/main/FirstCourse/GraphCalculator"
                 }
             ],
-            images: [GraphicsSRC1, GraphicsSRC2]
+            images: [projectImagesAPI+"GraphicsSRC1.png", projectImagesAPI+"GraphicsSRC2.png"]
         },
     ]
 
