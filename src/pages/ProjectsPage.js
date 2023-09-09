@@ -11,7 +11,7 @@ import Project12 from "../assets/img/Project12.jpg";
 import Project13 from "../assets/img/Project13.png";
 import Project14 from "../assets/img/Project14.png";
 import Project15 from "../assets/img/Project15.png";
-import UralMebelSCR1 from "../assets/img/Projects/UralMebelSCR1.png";
+import Project16 from "../assets/img/Project16.png";
 import {ProjectPreview} from "../components/ProjectPreview/ProjectPreview";
 import s from "./Pages.module.css"
 
@@ -32,7 +32,7 @@ export const ProjectsPage = () => {
             category: "Коммерческий",
             name: "УралМебель",
             description: "Веб-сайт с каталогом товаров и адресами магазинов для группы компаний, занимающихся мягкой мебелью, из Магнитогорска",
-            image: UralMebelSCR1,
+            image: Project16,
             tags: ["WordPress", "Elementor", "Интернет-магазин"],
             // gitURL: "123",
             projectURL: "https://уралмебель74.рф/"

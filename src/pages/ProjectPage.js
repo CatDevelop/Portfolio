@@ -127,7 +127,7 @@ export const ProjectPage = () => {
                 <br/>
                 <p className={s.projectBadge}>Чем занимался в проекте</p>
                 <ul className={s.nestedList}>
-                    <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
+                    <li className={classNames(sa.nestedListItem, s.nestedListItemUnordered)}>
                         Обновление плагинов WordPress c 2011 года
                     </li>
                     <li className={classNames(s.nestedListItem, s.nestedListItemUnordered)}>
