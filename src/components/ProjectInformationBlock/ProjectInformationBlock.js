@@ -6,8 +6,8 @@ import ProjectInformationRow from "../ProjectInformationRow/ProjectInformationRo
 function ProjectInformationBlock(props) {
     return (
         <div className={s.projectInformationBlock}>
-            {props.informationBlocks.map(el => {
-                return <ProjectInformationRow type={el.blockType} title={el.blockTitle} content={el.content} linkText={el.linkText}/>
+            {props.informationBlocks.map((el, i) => {
+                return <ProjectInformationRow key={"ProjectInformationBlock"+i} type={el.blockType} title={el.blockTitle} content={el.content} linkText={el.linkText}/>
             }
             )}
         </div>
