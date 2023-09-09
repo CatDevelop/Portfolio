@@ -10,7 +10,11 @@ export const ProjectPreview = (props) => {
             <div className={s.projectContent}>
                 <p className={s.projectCategory}>{props.category}</p>
                 <p onClick={() => navigate("/work/"+props.id)} className={s.projectName}>{props.name}</p>
-                <div className={s.projectDescription}>{props.description}</div>
+                <div className={s.projectDescription}>
+                    {props.description}
+                    <p onClick={() => navigate("/work/"+props.id)}
+                        className={classNames(s.more, props.isInvert ? s.moreInvert : "")}>Подробнее...</p>
+                </div>
                 <div className={s.projectTags}>
                     {
                         props.tags ?
