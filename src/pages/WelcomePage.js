@@ -61,7 +61,7 @@ export const WelcomePage = () => {
     ]
 
     return (
-        <div>
+        <div style={{paddingBottom: "48px"}}>
             <ConsoleAndPhoto toRotate={toRotate}/>
             <TechStack/>
 
@@ -120,7 +120,7 @@ export const WelcomePage = () => {
 
             <MyTimeline items={items}/>
 
-            <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center', marginBottom: "48px"}}>
+            <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center'}}>
                 <Button onClick={() => navigate("/works")}>Мои проекты</Button>
             </div>
         </div>
