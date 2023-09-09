@@ -6,7 +6,7 @@
 /.pnp
 .pnp.js
 /.idea
-/src/assets/img/Projects
+/img/Projects
 
 # testing
 /coverage
