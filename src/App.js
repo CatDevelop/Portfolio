@@ -11,9 +11,8 @@ import {BlogPage} from "./pages/BlogPage";
 function App() {
     return (
         <Router>
-            <ScrollToTop>
+            <ScrollToTop/>
                 <Routes>
-
                     <Route path='/' element={<Layout layout={'main'}/>}>
                         <Route index element={<WelcomePage/>}/>
                         <Route path='work/:projectID' element={<ProjectPage/>}/>
@@ -26,7 +25,6 @@ function App() {
 
                     </Route>
                 </Routes>
-            </ScrollToTop>
         </Router>);
 }
 

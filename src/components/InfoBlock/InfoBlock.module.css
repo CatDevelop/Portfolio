@@ -13,7 +13,7 @@
     max-width: 670px;
     margin: 10px auto;
     padding: 0 10px;
-    animation: show 1s ease-in-out;
+    animation: show 1s cubic-bezier(.25,.75,.5,1.25) forwards;
 }
 
 .header {
