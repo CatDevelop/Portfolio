@@ -1,0 +1,171 @@
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background: #2e2e31;
+
+    animation: show 1s cubic-bezier(.25,.75,.5,1.25) forwards;
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+}
+
+.nicknameContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+.nickname {
+    font-family: SFPro, serif;
+    font-weight: 600;
+    color: white;
+}
+
+.date {
+    font-family: SFPro, serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BBBBBB;
+}
+
+.pinned {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    font-family: SFPro, serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BBBBBB;
+    justify-self: end;
+}
+
+.pinned svg {
+    width: 16px;
+    height: 16px;
+}
+
+.post {
+    margin-bottom: 5px;
+    font-family: SFPro, serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.more {
+    font-family: SFPro, serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F086CB;
+    text-align: end;
+    cursor: pointer;
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.video {
+    width: 610px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video video {
+    border-radius: 10px;
+    background: black;
+}
+
+.image {
+    width: 610px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 610px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.image div {
+    border-radius: 10px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    font-family: SFPro, serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BBBBBB;
+}
+
+.location svg {
+    width: 16px;
+    height: 16px;
+}
+

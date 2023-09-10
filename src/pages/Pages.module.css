@@ -278,3 +278,10 @@
     color: #737373;
     font-size: 18px;
 }
+
+
+.blogPage_posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
