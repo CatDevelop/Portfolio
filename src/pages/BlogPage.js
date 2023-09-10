@@ -2,7 +2,7 @@ import {useNavigate} from "react-router-dom";
 import React from "react";
 import s from "./Pages.module.css";
 import BlogPost from "../components/BlogPost/BlogPost";
-import Avatar1 from '../assets/img/Avatar2.png'
+import Avatar1 from '../assets/img/Avatar1.png'
 
 export const BlogPage = () => {
     let navigate = useNavigate();
