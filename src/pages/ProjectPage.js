@@ -209,7 +209,7 @@ export const ProjectPage = () => {
                 //     content: "https://рекарт.рф"
                 // }
             ],
-            video: projectVideosAPI+"BeMyVoiceDemo.mp4",
+            video: projectVideosAPI+"BeMyVoice-Demo.mp4",
             images: [projectImagesAPI+"BeMyVoiceSRC1.png", projectImagesAPI+"BeMyVoiceSRC2.png", projectImagesAPI+"BeMyVoiceSRC3.png", projectImagesAPI+"BeMyVoiceSRC4.png"],
             imagePreviews: [BeMyVoiceSRC1Preview, BeMyVoiceSRC2Preview, BeMyVoiceSRC3Preview, BeMyVoiceSRC4Preview]
         },
