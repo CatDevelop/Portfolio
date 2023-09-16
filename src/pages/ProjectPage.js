@@ -266,7 +266,7 @@ export const ProjectPage = () => {
                 //     content: "https://рекарт.рф"
                 // }
             ],
-            images: [projectImagesAPI+"P1SRC1.png", projectImagesAPI+"P1SRC2.png", projectImagesAPI+"P1SRC3.png", projectImagesAPI+"P1SRC4.png", projectImagesAPI+"P1SRC5.png", projectImagesAPI+"P1SRC6.png"]
+            images: [projectImagesAPI+"P1SRC1.png", projectImagesAPI+"P1SRC2.png", projectImagesAPI+"P1SRC3.png", projectImagesAPI+"P1SRC4.png", projectImagesAPI+"P1SRC5.png", projectImagesAPI+"P1SRC6.png", projectImagesAPI+"P1SRC7.png"]
         },
         {
             id: 5,
