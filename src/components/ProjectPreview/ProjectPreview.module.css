@@ -29,7 +29,7 @@
     align-items: center;
 
     padding: 0 40px;
-    animation: showLeft .6s cubic-bezier(.25,.75,.5,1.25) forwards;
+    animation: showLeft 1s ease-in;
 }
 
 .projectPreview:nth-of-type(2n+1) {
