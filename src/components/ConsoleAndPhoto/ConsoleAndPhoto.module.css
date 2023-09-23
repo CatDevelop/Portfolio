@@ -65,4 +65,9 @@
     /*width: 35rem;*/
 }
 
+@media (max-width: 650px) {
+    .Console {
+        display: none;
+    }
+}
 
