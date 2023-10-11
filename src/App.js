@@ -8,7 +8,7 @@ import {ProjectPage} from "./pages/ProjectPage";
 import Layout from "./components/Layout";
 import {BlogPage} from "./pages/BlogPage";
 
-function App() {
+export default function App() {
     return (
         <Router>
             <ScrollToTop/>
@@ -17,15 +17,10 @@ function App() {
                         <Route index element={<WelcomePage/>}/>
                         <Route path='work/:projectID' element={<ProjectPage/>}/>
                         <Route path='blog' element={<BlogPage/>}/>
-
-                        {/*<Route path='components' element={<ComponentsPage/>}/>*/}
                     </Route>
                     <Route path='/' element={<Layout layout={'width'}/>}>
                         <Route path='works' element={<ProjectsPage/>}/>
-
                     </Route>
                 </Routes>
         </Router>);
 }
-
-export default App;
